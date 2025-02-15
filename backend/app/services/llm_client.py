@@ -85,7 +85,7 @@ def generate_report(patient_id: str) -> Tuple[str, str]:
     com_report: str = chat_response.choices[0].message.content
     # save to temp file with timestamp
     timestamp: str = time.strftime("%Y%m%d_%H%M%S")
-    report_file_cs: Path = root / f"app/reports/{patient_id}_cs_{timestamp}.md"
+    report_file_cs: Path = root / f"../app/reports/{patient_id}_cs_{timestamp}.md"
     report_file_cs.write_text(data=com_report, encoding="utf-8")
 
     # create Final Report
@@ -99,7 +99,7 @@ def generate_report(patient_id: str) -> Tuple[str, str]:
     final_report: str = chat_response.choices[0].message.content
     # save to temp file with timestamp
     timestamp: str = time.strftime("%Y%m%d_%H%M%S")
-    report_file_fs: Path = root / f"app/reports/{patient_id}_fs_{timestamp}.md"
+    report_file_fs: Path = root / f"../app/reports/{patient_id}_fs_{timestamp}.md"
     report_file_fs.write_text(data=final_report, encoding="utf-8")
 
     # print(f"Comprehensive Report saved to: {report_file_cs}")
