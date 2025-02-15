@@ -3,24 +3,16 @@ from app.config import settings
 from typing import Tuple
 from pathlib import Path
 from mistralai import ChatCompletionResponse, Mistral
-from dotenv import load_dotenv
-import os 
 import time
-# get prompt messages
-root: Path = Path(".").resolve()
 
-load_dotenv()
-api_key: str | None = settings.LLM_API_KEY
-model = settings.LLM_MISTRAL_MODEL
-
-current_file: Path = Path(__file__).resolve()
 # Navigate up three levels to reach the project root
-project_root: Path = current_file.parents[3]
-
-COMPREHENSIVE_PROMPT_FILE: Path = project_root / "prompts" / "stage_01" / "stage01_latest.md"
-FINAL_SUMMARY_PROMPT_FILE: Path = project_root / "prompts" / "stage_02" / "stage02_latest.md"
-MOCK_PATIENT_FILE: Path = project_root / "data" / "patient_001.txt"
-
+PROJECT_ROOT: Path = Path(__file__).resolve().parents[3]
+# prompt file path
+COMPREHENSIVE_PROMPT_FILE: Path = PROJECT_ROOT / "prompts" / "stage_01" / "stage01_latest.md"
+FINAL_SUMMARY_PROMPT_FILE: Path = PROJECT_ROOT / "prompts" / "stage_02" / "stage02_latest.md"
+# code to identify report type
+COMPREHENSIVE_SUMMARY_CODE = "cs"
+FINAL_SUMMARY_CODE = "fs"
 
 def call_llm(prompt: str) -> str:
     """
@@ -35,41 +27,40 @@ def call_llm(prompt: str) -> str:
     return chat_response.choices[0].message.content
     
 
-def generate_report(patient_id: str) -> Tuple[str, str]:
+def generate_report(patient_id: str, patient_data: str) -> Tuple[str, str]:
     """
-    Mock function to simulate generating a patient's report.
-    Returns a comprehensive report and a final report.
+    function to generating a patient's report.
+    Generate a comprehensive report and return a final report.
     """
-    # get files for patient
-    if MOCK_PATIENT_FILE.is_file() is False:
-        raise FileNotFoundError(f"File {MOCK_PATIENT_FILE} not found.")
-    content: str = MOCK_PATIENT_FILE.read_text(encoding="utf-8")
-
     # create Comprehensive Medical History Summary
-    if COMPREHENSIVE_PROMPT_FILE.is_file() is False:
-        raise FileNotFoundError(f"File {COMPREHENSIVE_PROMPT_FILE} not found.")
-    
-    comprehensive_prompt: str = COMPREHENSIVE_PROMPT_FILE.read_text(encoding="utf-8").format(content=content)
+    comprehensive_prompt: str = read_and_format_prompt_file(COMPREHENSIVE_PROMPT_FILE, content=patient_data)
     comprehensive_report: str = call_llm(comprehensive_prompt)
-    # save to temp file with timestamp
-    save_report("cs", comprehensive_report, patient_id, root)
+    save_report(COMPREHENSIVE_SUMMARY_CODE, comprehensive_report, patient_id)
 
     # create Final Report
-    if FINAL_SUMMARY_PROMPT_FILE.is_file() is False:
-        raise FileNotFoundError(f"File {FINAL_SUMMARY_PROMPT_FILE} not found.")
-    final_summary_prompt: str = FINAL_SUMMARY_PROMPT_FILE.read_text(encoding="utf-8").format(content=comprehensive_report)
-
+    final_summary_prompt: str = read_and_format_prompt_file(FINAL_SUMMARY_PROMPT_FILE, content=comprehensive_report)
     final_report: str = call_llm(final_summary_prompt)
-    # save to temp file with timestamp
-    report_file_fs = save_report("fs", final_report, patient_id, root)
+    report_file_fs = save_report(FINAL_SUMMARY_CODE, final_report, patient_id)
 
-    # print(f"Comprehensive Report saved to: {report_file_cs}")
     print(f"Final Report saved to: {report_file_fs}")
 
     return comprehensive_report, final_report
 
-def save_report(report_type: str, report_content: str, patient_id: str, root: Path) -> None:
+def save_report(report_type: str, report_content: str, patient_id: str) -> None:
     timestamp: str = time.strftime("%Y%m%d_%H%M%S")
-    file_path: Path = root / f"../app/reports/{patient_id}_{report_type}_{timestamp}.md"
+    file_path: Path = PROJECT_ROOT / f"app/reports/{patient_id}_{report_type}_{timestamp}.md"
     file_path.write_text(data=report_content, encoding="utf-8")
     return file_path
+
+def read_and_format_prompt_file(file_path: Path, content: str) -> str:
+    """
+    Reads a prompt file, verifies it exists, and returns the formatted content.
+    """
+    if not file_path.is_file():
+        raise FileNotFoundError(f"File {file_path} not found.")
+    
+    try:
+        file_text = file_path.read_text(encoding="utf-8")
+        return file_text.format(content=content)
+    except Exception as e:
+        raise Exception(f"Failed to read and format prompt file {file_path}: {e}")
