@@ -1,0 +1,107 @@
+Patient Name: Michael Carter
+Date of Birth: May 22, 1989
+Gender: Male
+Address: 789 Willow Street, Denver, USA
+
+Medical History Overview
+Chief Complaints:
+
+Recurrent migraines occurring 2-3 times per month, lasting 6-12 hours.
+Associated visual disturbances (flashing lights and zigzag patterns) preceding headaches.
+Sensitivity to light and sound during episodes.
+Past Medical History:
+
+Seasonal allergic rhinitis (diagnosed in 2012).
+Gastroesophageal reflux disease (GERD, diagnosed in 2018).
+No history of significant trauma or surgeries.
+Family History:
+
+Mother: History of migraines, alive at 62.
+Father: Hypertension and GERD, alive at 65.
+Sister: No significant medical conditions.
+Social History:
+
+Non-smoker.
+Occasional alcohol use (1-2 beers per week).
+Works as a software engineer with long hours in front of screens.
+Irregular sleep schedule.
+Medications:
+
+Omeprazole 20 mg daily (for GERD).
+Loratadine 10 mg daily (seasonal allergies).
+Ibuprofen 400 mg as needed for migraines.
+Allergies:
+
+None.
+Clinical Reports
+1. Neurologist Consultation Report
+Date: February 1, 2025
+Findings:
+
+Neurological exam: Normal cranial nerve function, no motor or sensory deficits.
+Visual field exam: No permanent deficits, normal between episodes.
+Trigger patterns identified: Migraines triggered by bright light, stress, and sleep deprivation.
+Impression:
+
+Migraine with aura.
+No evidence of structural abnormalities or secondary causes.
+Plan:
+
+Start prophylactic migraine medication (Topiramate 25 mg nightly, titrate to 50 mg as tolerated).
+Continue acute treatment with Sumatriptan 50 mg as needed during migraine episodes.
+2. MRI Brain Report
+Date: January 25, 2025
+Findings:
+
+No evidence of intracranial mass or lesion.
+No acute infarcts or structural abnormalities.
+Normal parenchymal and vascular structures.
+Impression:
+
+Normal MRI, ruling out secondary causes of headaches and visual disturbances.
+3. Vision Assessment Report (Ophthalmology)
+Date: January 22, 2025
+Findings:
+
+Visual acuity: 20/20 (both eyes).
+Retinal exam: Normal, no evidence of detachment or vascular abnormalities.
+Visual disturbances attributed to migraine aura.
+Impression:
+
+No ocular pathology.
+Aura symptoms likely due to cortical spreading depression associated with migraines.
+4. Comprehensive Metabolic Panel (CMP)
+Date: January 18, 2025
+
+Test	Result	Reference Range
+Sodium	140 mmol/L	135–145 mmol/L
+Potassium	4.1 mmol/L	3.5–5.0 mmol/L
+Blood Glucose (Fasting)	89 mg/dL	70–99 mg/dL
+ALT	25 U/L	7–56 U/L
+AST	18 U/L	10–40 U/L
+Impression:
+
+Normal metabolic panel.
+Plan and Recommendations:
+Migraine Management:
+
+Prophylactic Therapy: Start Topiramate 25 mg nightly, increase to 50 mg after 2 weeks if tolerated.
+Acute Treatment: Prescribe Sumatriptan 50 mg; patient to take at onset of migraine. Avoid exceeding 2 doses per 24 hours.
+Lifestyle Modifications:
+
+Maintain regular sleep patterns (consistent bedtime and wake-up time).
+Reduce screen time and take regular breaks from digital devices.
+Avoid known triggers (bright lights, prolonged fasting, and stress).
+Incorporate stress-reducing activities (e.g., yoga, meditation, or regular exercise).
+Dietary Guidance:
+
+Avoid migraine-triggering foods (chocolate, processed meats, red wine, etc.).
+Stay hydrated by consuming at least 2 liters of water daily.
+Follow-Up:
+
+Neurology follow-up in 3 months to assess response to Topiramate and frequency of migraines.
+Repeat visual assessment if aura symptoms worsen or change in pattern.
+Patient Education:
+
+Educate the patient about aura symptoms and their benign nature in the absence of neurological deficits.
+Reinforce the importance of taking Sumatriptan early during migraines to optimize efficacy.
