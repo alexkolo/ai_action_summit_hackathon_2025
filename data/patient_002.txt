@@ -1,0 +1,33 @@
+Patient Information
+Name: Sarah Johnson
+Age: 45
+
+Gender: Female
+
+Chief Complaint: Fatigue and joint pain for 3 months.
+
+PMH: Hypothyroidism, osteoarthritis.
+
+Medications: Levothyroxine 50 mcg daily, Ibuprofen as needed.
+
+Allergies: Penicillin (rash).
+
+Family History: Mother with rheumatoid arthritis, father with type 2 diabetes.
+
+Social History: Non-smoker, occasional alcohol, works as a teacher.
+
+ROS: Fatigue, morning stiffness, denies fever or weight loss.
+
+Physical Exam: Tender joints in hands and knees, no swelling.
+
+Lab Reports:
+
+TSH: 8.5 mIU/L (elevated)
+
+Rheumatoid Factor: Negative
+
+ESR: 28 mm/hr (elevated)
+
+Assessment: Hypothyroidism (poorly controlled), possible fibromyalgia.
+
+Plan: Adjust Levothyroxine dose, refer to rheumatology for joint pain.

@@ -1,0 +1,35 @@
+Patient Information
+Name: Emily Carter
+
+Age: 28
+
+Gender: Female
+
+Chief Complaint: Abdominal pain and diarrhea for 1 week.
+
+PMH: Irritable bowel syndrome (IBS), anxiety.
+
+Medications: Dicyclomine as needed, Sertraline 50 mg daily.
+
+Allergies: Sulfa drugs (rash).
+
+Family History: Mother with Crohn’s disease, father with hypertension.
+
+Social History: Vegetarian diet, occasional alcohol, works as a graphic designer.
+
+ROS: Cramping abdominal pain, loose stools (3-4/day), denies blood in stool.
+
+Physical Exam: Mild tenderness in lower abdomen, no rebound or guarding.
+
+Lab Reports:
+
+CBC: Normal
+
+Stool Studies: Negative for infection
+
+CRP: 10 mg/L (mildly elevated)
+
+Assessment: IBS flare, rule out inflammatory bowel disease.
+
+Plan: Start probiotics, consider colonoscopy if symptoms persist.
+
