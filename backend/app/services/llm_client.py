@@ -10,17 +10,20 @@ PROJECT_ROOT: Path = Path(__file__).resolve().parents[3]
 # prompt file path
 COMPREHENSIVE_PROMPT_FILE: Path = PROJECT_ROOT / "prompts" / "stage_01" / "stage01_latest.md"
 FINAL_SUMMARY_PROMPT_FILE: Path = PROJECT_ROOT / "prompts" / "stage_02" / "stage02_latest.md"
+
 # code to identify report type
 COMPREHENSIVE_SUMMARY_CODE = "cs"
 FINAL_SUMMARY_CODE = "fs"
+
+# Create the LLM client once at module load
+LLM_CLIENT = Mistral(api_key=settings.LLM_API_KEY)
 
 def call_llm(prompt: str) -> str:
     """
     Calls the Mistral LLM with the provided prompt and data.
     Returns the generated summary.
     """
-    client = Mistral(api_key=settings.LLM_API_KEY)
-    chat_response: ChatCompletionResponse = client.chat.complete(
+    chat_response: ChatCompletionResponse = LLM_CLIENT.chat.complete(
         model=settings.LLM_MISTRAL_MODEL,
         messages=[{"role": "user", "content": prompt}],
     )
