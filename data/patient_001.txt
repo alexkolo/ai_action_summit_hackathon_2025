@@ -1,0 +1,163 @@
+Patient Information
+Name: John Doe
+
+Date of Birth: March 15, 1985
+
+Gender: Male
+
+Medical Record Number: 123456789
+
+Chief Complaint
+Presenting Complaint: "Chest pain and shortness of breath for the past 2 days."
+
+History of Present Illness (HPI)
+John Doe is a 38-year-old male presenting with a 2-day history of intermittent, sharp, left-sided chest pain radiating to his left arm. The pain is exacerbated by physical activity and relieved slightly with rest. He also reports associated shortness of breath, especially when climbing stairs. No history of trauma or recent illness. Denies fever, cough, or recent travel. He has a history of hypertension and hyperlipidemia but no prior cardiac events.
+
+Past Medical History (PMH)
+Hypertension: Diagnosed in 2015, managed with Lisinopril 10 mg daily.
+
+Hyperlipidemia: Diagnosed in 2018, managed with Atorvastatin 20 mg daily.
+
+Gastroesophageal Reflux Disease (GERD): Diagnosed in 2020, managed with Omeprazole 20 mg as needed.
+
+No known history of diabetes, asthma, or chronic kidney disease.
+
+Past Surgical History (PSH)
+Appendectomy: 2002 (uncomplicated recovery).
+
+Medications
+Lisinopril 10 mg daily
+
+Atorvastatin 20 mg daily
+
+Omeprazole 20 mg as needed
+
+Multivitamin daily
+
+Allergies
+NKDA: No known drug allergies.
+
+Environmental Allergies: Seasonal pollen (causes mild rhinitis).
+
+Family History
+Father: History of myocardial infarction at age 55, hypertension, and type 2 diabetes.
+
+Mother: History of breast cancer (diagnosed at 60), no cardiac history.
+
+Siblings: One brother, healthy.
+
+Social History
+Occupation: Software engineer (sedentary job).
+
+Smoking: Former smoker (quit in 2015, 10 pack-year history).
+
+Alcohol: Occasional social drinker (1-2 drinks per week).
+
+Drug Use: Denies illicit drug use.
+
+Exercise: Minimal physical activity (walks 1-2 times per week).
+
+Diet: High in processed foods, low in fruits and vegetables.
+
+Review of Systems (ROS)
+General: Denies fatigue, weight loss, or fever.
+
+Cardiovascular: Reports chest pain and shortness of breath (as above). Denies palpitations or edema.
+
+Respiratory: Denies cough, wheezing, or hemoptysis.
+
+Gastrointestinal: Occasional heartburn, no nausea, vomiting, or changes in bowel habits.
+
+Neurological: Denies headaches, dizziness, or syncope.
+
+Musculoskeletal: Denies joint pain or swelling.
+
+Physical Examination
+Vital Signs:
+
+Blood Pressure: 145/90 mmHg
+
+Heart Rate: 88 bpm
+
+Respiratory Rate: 18 breaths/min
+
+Temperature: 98.6°F (37°C)
+
+Oxygen Saturation: 96% on room air
+
+General: Well-nourished, no acute distress.
+
+Cardiovascular: Regular rate and rhythm, no murmurs, rubs, or gallops.
+
+Respiratory: Clear to auscultation bilaterally, no wheezes or crackles.
+
+Abdomen: Soft, non-tender, no organomegaly.
+
+Extremities: No edema, pulses 2+ bilaterally.
+
+Diagnostic Reports
+Electrocardiogram (ECG):
+
+Sinus rhythm, no ST-segment elevation or depression.
+
+T-wave inversion in leads V1-V3.
+
+Chest X-Ray:
+
+No acute cardiopulmonary findings.
+
+Mild cardiomegaly noted.
+
+Blood Tests:
+
+Troponin I: Negative (<0.04 ng/mL).
+
+Lipid Panel:
+
+Total Cholesterol: 220 mg/dL (elevated)
+
+LDL: 150 mg/dL (elevated)
+
+HDL: 40 mg/dL (low)
+
+Triglycerides: 180 mg/dL (elevated)
+
+HbA1c: 5.6% (normal).
+
+Echocardiogram:
+
+Ejection Fraction: 55% (normal).
+
+No wall motion abnormalities.
+
+Assessment
+Atypical Chest Pain: Likely musculoskeletal or GERD-related, but cardiac etiology cannot be ruled out entirely.
+
+Hypertension: Poorly controlled.
+
+Hyperlipidemia: Poorly controlled, high cardiovascular risk.
+
+Plan
+Cardiac Workup:
+
+Stress test to evaluate for ischemia.
+
+Consider coronary CT angiography if stress test is inconclusive.
+
+Medication Adjustments:
+
+Increase Lisinopril to 20 mg daily.
+
+Add Aspirin 81 mg daily for cardiovascular risk reduction.
+
+Lifestyle Modifications:
+
+Refer to dietitian for Mediterranean diet counseling.
+
+Encourage regular aerobic exercise (30 minutes, 5 times per week).
+
+Follow-Up:
+
+Return in 4 weeks for blood pressure and lipid recheck.
+
+Schedule stress test within 1 week.
