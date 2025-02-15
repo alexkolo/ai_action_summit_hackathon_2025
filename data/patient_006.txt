@@ -1,0 +1,105 @@
+Patient Information
+Name: Maria Sanchez
+Date of Birth: July 12, 1990
+
+Gender: Female
+Address: 456 Elm Avenue, Los Angeles, USA
+
+Medical History Overview
+Chief Complaints:
+
+Severe lower abdominal pain, radiating to the back, for the past 2 weeks.
+Associated symptoms: nausea, bloating, and irregular periods for the last 3 months.
+Past Medical History:
+
+Polycystic Ovary Syndrome (PCOS, diagnosed in 2014).
+Anxiety disorder (diagnosed in 2019).
+History of migraine headaches since adolescence.
+Surgical History: None.
+
+Family History:
+
+Mother: Type 2 diabetes, alive at 62.
+Father: Hypertension, alive at 65.
+Brother: Healthy, alive at 35.
+
+Social History:
+
+Non-smoker.
+Drinks wine occasionally (1-2 glasses per month).
+Works as a graphic designer with sedentary work hours.
+Limited exercise (yoga once a week).
+
+
+Medications:
+
+Metformin 500 mg twice daily (for PCOS).
+Escitalopram 10 mg daily (for anxiety).
+Ibuprofen 400 mg as needed for migraines.
+Allergies:
+
+Penicillin (rash and itching).
+Clinical Reports
+1. Gynecological Ultrasound Report
+Date: February 1, 2025
+Findings:
+
+Ovaries: Bilateral ovarian cysts measuring 4.5 cm (right) and 3.8 cm (left).
+Uterus: Normal size, no fibroids detected.
+Endometrial thickness: 11 mm (mildly increased).
+Impression:
+
+Bilateral ovarian cysts, likely functional.
+Requires follow-up to rule out endometriosis or other causes.
+
+2. Hormonal Profile
+Date: January 30, 2025
+
+Test	Result	Reference Range
+LH	15 mIU/mL	1.68–15 mIU/mL
+FSH	6 mIU/mL	3.5–12.5 mIU/mL
+Testosterone	55 ng/dL	8–60 ng/dL
+Estradiol	40 pg/mL	25–75 pg/mL (follicular phase)
+Interpretation:
+
+Findings consistent with PCOS (elevated LH/FSH ratio).
+3. Complete Blood Count (CBC)
+Date: January 28, 2025
+
+Test	Result	Reference Range
+Hemoglobin	11.2 g/dL	12.0–15.5 g/dL
+WBC	8,200/µL	4,000–11,000/µL
+Platelet Count	250,000/µL	150,000–450,000/µL
+Impression:
+
+Mild anemia likely due to heavy periods.
+4. Anxiety Screening (GAD-7)
+Date: January 25, 2025
+Score: 10/21 (Moderate Anxiety)
+
+Interpretation:
+
+Ongoing mild-to-moderate anxiety requiring maintenance therapy with Escitalopram and lifestyle interventions.
+Plan and Recommendations:
+Management of Abdominal Pain:
+
+Begin oral contraceptive pills to regulate menstrual cycles and reduce cyst formation.
+Prescribe a short course of NSAIDs (Naproxen 250 mg twice daily) for pain relief.
+Schedule a follow-up pelvic ultrasound in 6 weeks to monitor cyst size.
+Lifestyle Adjustments for PCOS:
+
+Encourage weight loss through a low-glycemic-index diet and at least 150 minutes of exercise weekly.
+Discuss referral to a dietitian for tailored nutritional guidance.
+Anemia Treatment:
+
+Start oral iron supplementation (ferrous sulfate 325 mg daily).
+Advise a diet rich in iron and vitamin C (leafy greens, citrus fruits).
+Anxiety Management:
+
+Continue Escitalopram 10 mg daily.
+Encourage mindfulness and relaxation techniques (yoga, meditation).
+
+Follow-Up:
+
+Repeat CBC in 2 months to reassess anemia.
+Follow up with gynecologist in 6 weeks for repeat ultrasound and pain assessment.

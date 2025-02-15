@@ -1,0 +1,110 @@
+Patient Information
+Name: Eleanor Davis
+Date of Birth: March 10, 1942
+Gender: Female
+Address: 321 Oak Lane, Boston, USA
+
+Medical History Overview
+Chief Complaints:
+
+Chronic lower back pain radiating to the left leg (consistent with sciatica), worsening over the past 3 months.
+Recent episode of a fall (no fractures reported but increased back pain afterward).
+Difficulty standing for long periods and walking due to pain and reduced mobility.
+Past Medical History:
+
+Osteoporosis (diagnosed in 2015, history of compression fractures in the thoracic spine).
+Sciatica (diagnosed in 2018).
+Hypertension (diagnosed in 2000, well-controlled).
+Mild hearing loss (uses hearing aids).
+Cataract surgery (both eyes, 2020).
+Family History:
+
+Mother: Osteoporosis, deceased at 88 (hip fracture).
+Father: Hypertension, deceased at 76 (stroke).
+Siblings: One sister with arthritis, alive at 78.
+Social History:
+
+Non-smoker.
+Does not consume alcohol.
+Lives independently in a single-story home with help from a caregiver for household tasks.
+Medications:
+
+Alendronate 70 mg once weekly (for osteoporosis).
+Calcium with Vitamin D 1200 mg daily.
+Lisinopril 10 mg daily (for hypertension).
+Acetaminophen 500 mg as needed for pain.
+Allergies:
+
+None.
+Clinical Reports
+1. Bone Density Scan (DEXA)
+Date: January 12, 2025
+Findings:
+
+Lumbar Spine T-Score: -3.2 (severe osteoporosis).
+Left Femoral Neck T-Score: -2.7 (osteoporosis).
+Impression:
+
+Advanced osteoporosis with high fracture risk.
+2. MRI of Lumbar Spine
+Date: January 25, 2025
+Findings:
+
+L4-L5 disc herniation compressing the left sciatic nerve.
+Moderate lumbar spondylosis and facet joint arthritis.
+No evidence of metastatic lesions or acute vertebral fractures.
+Impression:
+
+Sciatica due to L4-L5 disc herniation.
+3. X-Ray Thoracic Spine
+Date: January 20, 2025
+Findings:
+
+Evidence of old compression fractures in T6 and T7 vertebrae.
+Mild thoracic kyphosis.
+Impression:
+
+Chronic compression fractures secondary to osteoporosis.
+4. Vitamin D and Calcium Levels
+Date: January 15, 2025
+
+Test	Result	Reference Range
+Vitamin D (25-OH)	22 ng/mL	30–100 ng/mL
+Serum Calcium	9.2 mg/dL	8.5–10.5 mg/dL
+Impression:
+
+Vitamin D insufficiency.
+Plan and Recommendations:
+Osteoporosis Management:
+
+Continue Alendronate 70 mg weekly.
+Increase Vitamin D supplementation to 2000 IU daily.
+Maintain calcium intake of 1200 mg daily through diet and supplements.
+Recommend light weight-bearing exercises and physical therapy to improve bone strength and mobility.
+Fall prevention measures: Remove tripping hazards, install grab bars in the home, and ensure proper footwear.
+Sciatica Treatment:
+
+Prescribe Gabapentin 100 mg at night, titrate to 300 mg daily as tolerated, to manage nerve pain.
+Refer to physical therapy for lumbar stabilization exercises and sciatica-specific stretches.
+Consider epidural steroid injection at L4-L5 if pain persists despite conservative measures.
+Pain Management:
+
+Use Acetaminophen 1000 mg up to 3 times daily as needed for mild pain.
+Avoid NSAIDs due to increased fracture risk and potential gastrointestinal side effects.
+Consider referral to a pain specialist if pain is refractory to current treatment.
+Vitamin D Replenishment:
+
+Recheck Vitamin D levels in 3 months after starting high-dose supplementation.
+Lifestyle Adjustments:
+
+Encourage short daily walks with assistance as tolerated to maintain mobility.
+Emphasize the importance of hydration and a balanced diet rich in leafy greens and dairy for bone health.
+Follow-Up:
+
+Bone density scan (DEXA) in 12 months to monitor progress.
+Follow-up with neurology in 6 weeks to assess response to Gabapentin and physical therapy for sciatica.
+Patient Education:
+Explain the chronic nature of sciatica and the importance of adhering to physical therapy for long-term relief.
+Educate on osteoporosis and fracture prevention strategies, emphasizing fall avoidance.
+Discuss the role of Vitamin D and calcium in improving bone health and reducing future fractures.
+
