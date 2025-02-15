@@ -9,10 +9,12 @@ from typing import Tuple
 
 import streamlit as st
 from dotenv import load_dotenv
-from mistralai import Mistral
+from mistralai import ChatCompletionResponse, Mistral
+from mock_backend import generate_report as generate_report_mock
 
 load_dotenv()
 api_key: str | None = os.getenv(key="MISTRAL_TOKEN")
+model = "mistral-large-latest"
 
 
 # Mock function to check if a patient is in the database
@@ -34,28 +36,27 @@ def generate_report(patient_id: str) -> Tuple[str, str]:
     Mock function to simulate generation of a patient medical report.
     Returns a static string with a placeholder medical summary.
     """
-    # In a real scenario, some NLP or data processing might occur here
-    # We'll just return a short fake report for demonstration
-    com_report: str = (
-        f"### Comprehensive Medical History Summary for {patient_id}\n\n"
-        f"- **Age**: 45\n"
-        f"- **Condition**: Hypertension\n"
-        f"- **Medications**: Amlodipine, Lisinopril\n"
-        f"- **Recent Lab Results**: Cholesterol high, needs dietary changes\n\n"
-        f"**Additional Notes**:\n"
-        f"Patient should continue medication and follow up in 2 weeks."
-    )
-    final_report: str = (
-        f"### Medical Report for {patient_id}\n\n"
-        f"- **Age**: 45\n"
-        f"- **Condition**: Hypertension\n"
-        f"- **Medications**: Amlodipine, Lisinopril\n"
-        f"- **Recent Lab Results**: Cholesterol high, needs dietary changes\n\n"
-        f"**Additional Notes**:\n"
-        f"Patient should continue medication and follow up in 2 weeks."
-    )
+    # com_report: str = (
+    #     f"### Comprehensive Medical History Summary for {patient_id}\n\n"
+    #     f"- **Age**: 45\n"
+    #     f"- **Condition**: Hypertension\n"
+    #     f"- **Medications**: Amlodipine, Lisinopril\n"
+    #     f"- **Recent Lab Results**: Cholesterol high, needs dietary changes\n\n"
+    #     f"**Additional Notes**:\n"
+    #     f"Patient should continue medication and follow up in 2 weeks."
+    # )
+    # final_report: str = (
+    #     f"### Medical Report for {patient_id}\n\n"
+    #     f"- **Age**: 45\n"
+    #     f"- **Condition**: Hypertension\n"
+    #     f"- **Medications**: Amlodipine, Lisinopril\n"
+    #     f"- **Recent Lab Results**: Cholesterol high, needs dietary changes\n\n"
+    #     f"**Additional Notes**:\n"
+    #     f"Patient should continue medication and follow up in 2 weeks."
+    # )
+    # return com_report, final_report
 
-    return com_report, final_report
+    return generate_report_mock(patient_id=patient_id)
 
 
 def main() -> None:
@@ -95,6 +96,8 @@ def main() -> None:
             key="user_email_input",
             placeholder="Enter patient's email address",
         )
+
+        # st.write(f"Current path: {Path('.').resolve()}")
 
         # Use a form_submit_button instead of a regular button
         lookup_submit: bool = col_button.form_submit_button(label="Look up patient", type="primary")
@@ -155,7 +158,6 @@ def main() -> None:
     # If the chat window is open, show a simple chat interface
     if st.session_state.chat_open:
         client = Mistral(api_key=api_key)
-        model = "mistral-large-latest"
 
         # create system message if chat history is empty
         if st.session_state.chat_history == []:
@@ -187,7 +189,7 @@ def main() -> None:
 
                 #  real answer from Mistral
                 with st.spinner(text="Generating response..."):
-                    chat_response = client.chat.complete(
+                    chat_response: ChatCompletionResponse = client.chat.complete(
                         model=model,
                         messages=st.session_state.chat_history,
                     )
