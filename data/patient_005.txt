@@ -1,0 +1,99 @@
+Patient Name: Johnathan Miller
+Date of Birth: March 5, 1980
+Gender: Male
+Address: 123 Main Street, Springfield, USA
+
+Medical History Overview
+Chief Complaints:
+
+Persistent chest pain for the past 3 months.
+Occasional shortness of breath during physical exertion.
+Past Medical History:
+
+Hypertension (diagnosed in 2016).
+Hyperlipidemia (diagnosed in 2018).
+Appendectomy in 2005 (uncomplicated recovery).
+COVID-19 infection (March 2021, mild symptoms).
+Family History:
+
+Father: Deceased at 67 (myocardial infarction).
+Mother: Hypertension, alive at 75.
+Sister: Type 2 diabetes, alive at 42.
+Social History:
+
+Smoker (10 cigarettes/day for 15 years, quit in 2020).
+Occasional alcohol use (1-2 drinks/week).
+Sedentary lifestyle.
+Medications:
+
+Lisinopril 10 mg daily (for hypertension).
+Atorvastatin 20 mg daily (for hyperlipidemia).
+Multivitamin daily.
+Allergies:
+
+No known drug or food allergies.
+Clinical Reports
+1. Cardiologist Consultation Report
+Date: January 20, 2025
+Findings:
+
+Blood pressure: 140/90 mmHg
+Heart rate: 85 bpm
+ECG: Normal sinus rhythm, no ST-T changes.
+Echocardiogram: Mild left ventricular hypertrophy; ejection fraction preserved at 55%.
+Impression:
+
+Hypertensive heart disease.
+No acute ischemic changes.
+Plan:
+
+Increase Lisinopril to 20 mg daily.
+Encourage weight loss and regular aerobic exercise.
+Schedule a stress test.
+2. Stress Test Report
+Date: February 1, 2025
+Procedure: Bruce Protocol
+
+Patient exercised for 7 minutes.
+Achieved 85% of maximum predicted heart rate.
+No chest pain during the test.
+ECG showed no significant ischemic changes.
+Impression:
+
+Functional capacity within normal limits.
+Low likelihood of obstructive coronary artery disease.
+3. Lipid Panel Report
+Date: January 15, 2025
+
+Test	Result	Reference Range
+Total Cholesterol	220 mg/dL	<200 mg/dL
+LDL Cholesterol	140 mg/dL	<100 mg/dL
+HDL Cholesterol	45 mg/dL	>40 mg/dL
+Triglycerides	180 mg/dL	<150 mg/dL
+Interpretation:
+
+Borderline high cholesterol.
+Increased cardiovascular risk due to elevated LDL.
+4. Pulmonary Function Test (PFT)
+Date: January 18, 2025
+
+FEV1: 85% predicted.
+FVC: 90% predicted.
+FEV1/FVC Ratio: 0.94 (normal).
+Impression:
+
+Normal lung function.
+Plan and Recommendations:
+Lifestyle Modifications:
+
+Follow a low-sodium, heart-healthy diet (DASH diet).
+Engage in at least 150 minutes of moderate-intensity aerobic activity weekly.
+Avoid alcohol and completely abstain from tobacco.
+Medication Adjustments:
+
+Increase Atorvastatin to 40 mg daily to lower LDL cholesterol.
+Maintain Lisinopril 20 mg for blood pressure control.
+Follow-Up:
+
+Repeat lipid panel in 3 months.
+Follow-up with cardiology in 6 months.
