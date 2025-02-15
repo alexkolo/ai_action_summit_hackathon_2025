@@ -4,6 +4,7 @@ Start: streamlit run app/app.py
 
 import os
 import time
+from pathlib import Path
 from typing import Tuple
 
 import streamlit as st
@@ -96,7 +97,7 @@ def main() -> None:
         )
 
         # Use a form_submit_button instead of a regular button
-        lookup_submit: bool = col_button.form_submit_button(label="Look up patient")
+        lookup_submit: bool = col_button.form_submit_button(label="Look up patient", type="primary")
 
     # Step 2: Button to look up the patient
     if lookup_submit:  # st.button(label="Look up patient", disabled=email_input_disabled):
@@ -130,7 +131,7 @@ def main() -> None:
         col1, col2, col3 = st.columns(3, gap="large")
 
         with col1:
-            if st.button(label="Ask Questions", use_container_width=True):
+            if st.button(label="Ask Questions", use_container_width=True, type="primary"):
                 st.session_state.chat_open = True  # Open the chat window
 
         with col2:
@@ -159,8 +160,9 @@ def main() -> None:
         # create system message if chat history is empty
         if st.session_state.chat_history == []:
             system_message: str = (
-                "You are helpful assistant, answering questions about patient data to a medical professional. Here is the patient's data: "
-                + st.session_state.com_report
+                Path("app/chat_box/system_latest.md")
+                .read_text(encoding="utf-8")
+                .format(content=st.session_state.com_report)
             )
             st.session_state.chat_history.append({"role": "system", "content": system_message})
 
