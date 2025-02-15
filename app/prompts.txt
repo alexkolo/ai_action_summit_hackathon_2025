@@ -1,0 +1,18 @@
+#  Prompt
+
+Create a very simple and easy to use streamlit app, which I describe below.
+The user will be medical professionals, like GPs.
+Start with a input field, where the user enters a patients email address and a "Look up patient" button below.
+Once clicked, a database is checked if the address exist (create a mock for this call which returns True).
+If False, return a warning message that no data is available for this patient. (The use should be able to enter a new email address in the input file to start a new check.)
+If True, return a success message that data is available for this patient. This locks the input field. This also triggers a process in the back-end that creates a short medical report of this patient. Mock this process and return a fake report for now.
+A spinning wheel is shown will the process is running. Mock 2 second process time.
+Once the report is create, show it as markdown.
+Below the report start showing these buttons:
+- "Ask Questions" which opens a chat window below to let the medical professional ask questions about the patient
+- "Download" which lets download the report
+- "Restart" which clears everything and starts over.
+
+
+Please ask verifying questions is something is not clear.
+Use static type hints and comments to explain each element in the code.
