@@ -1,0 +1,185 @@
+Patient Information
+Name: Robert Miller
+
+Date of Birth: October 12, 1973
+
+Gender: Male
+
+Medical Record Number: 456789123
+
+Chief Complaint
+Presenting Complaint: "Blurred vision and swollen legs for the past 3 months."
+
+History of Present Illness (HPI)
+Robert is a 50-year-old male with a 10-year history of type 2 diabetes (HbA1c consistently >9%) and hypertension. Over the past 3 months, he reports worsening blurred vision (difficulty reading, "dark spots" in visual field) and bilateral lower extremity edema. He also notes increased fatigue, nocturia (3-4x/night), and unintentional weight loss (10 lbs over 6 months). Adherence to medications is inconsistent due to financial constraints. No chest pain or dyspnea.
+
+Past Medical History (PMH)
+Type 2 Diabetes Mellitus: Diagnosed in 2013, managed with Metformin 1000 mg BID and Insulin Glargine 30 units nightly.
+
+Hypertension: Diagnosed in 2015, managed with Lisinopril 20 mg daily.
+
+Diabetic Nephropathy: Diagnosed in 2022 (eGFR 45 mL/min/1.73m²).
+
+Obesity: BMI 32.5.
+
+Hyperlipidemia: On Atorvastatin 40 mg.
+
+Past Surgical History (PSH)
+Cholecystectomy: 2018 (uncomplicated).
+
+Medications
+Metformin 1000 mg BID
+
+Insulin Glargine 30 units nightly
+
+Lisinopril 20 mg daily
+
+Atorvastatin 40 mg nightly
+
+Furosemide 20 mg PRN (rarely used)
+
+Allergies
+NKDA: No known drug allergies.
+
+Family History
+Father: Type 2 diabetes, end-stage renal disease (on dialysis).
+
+Mother: Hypertension, died of stroke at age 68.
+
+Brother: Obesity, prediabetes.
+
+Social History
+Occupation: Truck driver (sedentary, irregular meals).
+
+Diet: High in processed foods, sugary drinks, and carbohydrates.
+
+Smoking: 20 pack-year history (quit 5 years ago).
+
+Alcohol: 1-2 beers weekly.
+
+Exercise: Minimal physical activity.
+
+Review of Systems (ROS)
+General: Fatigue, weight loss.
+
+Eyes: Blurred vision, floaters.
+
+Renal: Nocturia, frothy urine.
+
+Cardiovascular: Denies chest pain or palpitations.
+
+Neurological: Mild numbness in feet.
+
+GI: Denies nausea/vomiting.
+
+Physical Examination
+Vital Signs:
+
+BP: 160/95 mmHg
+
+HR: 78 bpm
+
+RR: 16 breaths/min
+
+Temp: 98.4°F (36.9°C)
+
+Weight: 220 lbs (100 kg)
+
+Eyes:
+
+Fundoscopic exam: Dot-blot hemorrhages, hard exudates (non-proliferative diabetic retinopathy).
+
+Cardiovascular: Regular rhythm, no murmurs.
+
+Abdomen: Soft, obese, non-tender.
+
+Extremities: 2+ pitting edema to mid-calf bilaterally.
+
+Neurological: Reduced vibration sense in both feet.
+
+Diagnostic Reports
+Blood Tests:
+
+HbA1c: 9.6% (poorly controlled).
+
+Lipid Panel:
+
+Total Cholesterol: 250 mg/dL
+
+LDL: 160 mg/dL
+
+HDL: 35 mg/dL
+
+Renal Function:
+
+Creatinine: 2.1 mg/dL (elevated)
+
+eGFR: 38 mL/min/1.73m² (CKD Stage 3b).
+
+Urinalysis:
+
+Proteinuria: 3+ (confirmed 24-hour urine collection: 2.8 g/day).
+
+Microalbuminuria: Positive.
+
+Imaging:
+
+Retinal Imaging: Moderate non-proliferative diabetic retinopathy with macular edema.
+
+Renal Ultrasound: Bilateral small, echogenic kidneys consistent with chronic kidney disease.
+
+ECG: Sinus rhythm, left ventricular hypertrophy (LVH) noted.
+
+Assessment
+Uncontrolled Type 2 Diabetes Mellitus with complications:
+
+Diabetic Retinopathy (non-proliferative with macular edema).
+
+Diabetic Nephropathy (CKD Stage 3b).
+
+Diabetic Peripheral Neuropathy.
+
+Hypertension: Poorly controlled.
+
+Obesity: BMI 32.5.
+
+Plan
+Diabetes Management:
+
+Switch to Insulin Degludec (long-acting) + Insulin Aspart (prandial) for tighter glucose control.
+
+Start Empagliflozin 10 mg daily (SGLT2 inhibitor for renal protection).
+
+Discontinue Metformin (eGFR <45 contraindication).
+
+Hypertension:
+
+Add Amlodipine 5 mg daily to Lisinopril.
+
+Goal BP <130/80 mmHg.
+
+Vision:
+
+Urgent referral to ophthalmology for anti-VEGF therapy (e.g., aflibercept) for macular edema.
+
+Renal Protection:
+
+Low-protein diet (refer to renal dietitian).
+
+Monitor electrolytes and eGFR monthly.
+
+Lifestyle Interventions:
+
+Structured diabetes education program.
+
+Weight loss counseling (goal: 5% body weight reduction).
+
+Smoking cessation reinforcement.
+
+Follow-Up:
+
+Repeat HbA1c in 3 months.
+
+Podiatry referral for foot care (neuropathy prevention).
+
+Nephrology consult for CKD management.
