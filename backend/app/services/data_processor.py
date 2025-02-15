@@ -12,4 +12,26 @@ def process_user_documents(social_security_number: str) -> str:
     """
     Retrieves user documents, processes them through two LLM calls, and returns the final summary.
     """
-    return 'fianl llm summary'
+    db: Session = SessionLocal()
+    try:
+        # Retrieve the user and their associated documents from the database using social_security_number
+        user = db.query(User).filter(User.social_security_number == social_security_number).first()
+        if not user:
+            raise Exception("User not found")
+
+        # Aggregate all document contents
+        contents = []
+        for document in user.documents:
+            content = fetch_document(document.link)
+            contents.append(content)
+        
+        contents_string = " ".join(contents)
+        # First LLM call: Get the comprehensive summary
+        comprehensive_summary = call_llm(prompt=COMPREHENSIVE_PROMPT, data=contents_string)
+
+        # Second LLM call: Refine the comprehensive summary to get the final summary
+        final_summary = call_llm(prompt=FINAL_PROMPT, data=comprehensive_summary)
+
+        return final_summary
+    finally:
+        db.close()

@@ -15,8 +15,11 @@ class Settings(BaseSettings):
     # LLM settings
     LLM_API_KEY: str
     LLM_ENDPOINT: str
+    LLM_MISTRAL_MODEL: str
 
     class Config:
         env_file = ".env"
+        # ignore extra environment variables
+        extra = "allow"  
 
 settings = Settings()
