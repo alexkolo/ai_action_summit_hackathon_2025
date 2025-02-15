@@ -2,14 +2,13 @@ from sqlalchemy.orm import Session
 from app.db import SessionLocal
 from app.models.user import User
 from app.services.object_store import fetch_document_from_text_file
-from app.services.llm_client import call_llm
+from app.services.llm_client import call_llm, generate_report
 import os
 current_dir = os.path.dirname(__file__)
 root_dir = os.path.abspath(os.path.join(current_dir, "../../.."))
-
 # Define the prompts for each LLM call
-COMPREHENSIVE_PROMPT = "Please provide a comprehensive summary for the following documents:\n"
-FINAL_PROMPT = "Refine the above summary to produce a final, polished summary:\n"
+COMPREHENSIVE_PROMPT_FILE = os.path.join(root_dir, "prompts", "stage_01/stage01_latest.md"),
+FINAL_PROMPT_FILE = os.path.join(root_dir, "prompts", "stage_02/stage02_latest.md")
 
 def process_user_documents(num_social_sec: str) -> str:
     """
@@ -41,11 +40,14 @@ def process_user_documents(num_social_sec: str) -> str:
         #     contents.append(content)
         contents_string = " ".join(contents)
         # First LLM call: Get the comprehensive summary
-        comprehensive_summary = call_llm(prompt=COMPREHENSIVE_PROMPT, data=contents_string)
 
-        # Second LLM call: Refine the comprehensive summary to get the final summary
-        final_summary = call_llm(prompt=FINAL_PROMPT, data=comprehensive_summary)
+        # COMPREHENSIVE_PROMPT: str = COMPREHENSIVE_PROMPT_FILE.read_text(encoding="utf-8").format(content=contents_string)
+        # comprehensive_summary = call_llm(prompt=COMPREHENSIVE_PROMPT, data=contents_string)
 
-        return final_summary
+        # # Second LLM call: Refine the comprehensive summary to get the final summary
+        # final_summary = call_llm(prompt=FINAL_PROMPT, data=comprehensive_summary)
+
+        # return final_summary
+        return generate_report(num_social_sec)
     finally:
         db.close()
