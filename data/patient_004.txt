@@ -1,0 +1,37 @@
+Patient Information
+Name: Michael Brown
+
+Age: 60
+
+Gender: Male
+
+Chief Complaint: Shortness of breath and swelling in legs.
+
+PMH: Heart failure (EF 35%), hypertension, type 2 diabetes.
+
+Medications: Lisinopril 20 mg, Metformin 1000 mg, Furosemide 40 mg.
+
+Allergies: NKDA.
+
+Family History: Father with heart failure, mother with hypertension.
+
+Social History: Former smoker (quit 10 years ago), sedentary lifestyle.
+
+ROS: Dyspnea on exertion, orthopnea, denies chest pain.
+
+Physical Exam: Bilateral pitting edema, jugular venous distension, lung crackles.
+
+Lab Reports:
+
+BNP: 1200 pg/mL (elevated)
+
+Creatinine: 1.4 mg/dL (elevated)
+
+HbA1c: 7.2% (elevated)
+
+Assessment: Acute decompensated heart failure, poorly controlled diabetes.
+
+Plan: Increase Furosemide, add Spironolactone, refer to cardiology.
+
+
+
