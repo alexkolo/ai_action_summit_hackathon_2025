@@ -1,0 +1,143 @@
+Patient Information
+Name: Emma Wilson
+
+Date of Birth: April 5, 2002
+
+Gender: Female
+
+Medical Record Number: 789012345
+
+Chief Complaint
+Presenting Complaint: "Recurrent panic attacks and persistent anxiety for 6 months."
+
+History of Present Illness (HPI)
+Emma is a 22-year-old college student reporting worsening anxiety over the past 6 months, accompanied by panic attacks (2-3 times weekly). Symptoms include palpitations, sweating, trembling, and a fear of "losing control." Attacks last 10–15 minutes and are often triggered by academic stress or crowded environments. She avoids attending lectures and social gatherings due to fear of triggering an attack. Denies substance use, trauma, or recent life changes. Reports difficulty sleeping and poor concentration. No suicidal ideation.
+
+Past Medical History (PMH)
+Generalized Anxiety Disorder (GAD): Diagnosed at age 18, managed with intermittent counseling.
+
+No history of hospitalizations or psychiatric emergencies.
+
+Previous Medications: Sertraline (discontinued in 2021 due to nausea).
+
+Past Surgical History (PSH)
+Tonsillectomy: Age 7 (uncomplicated).
+
+Medications
+Lorazepam 0.5 mg: As needed for panic attacks (uses 1-2 times weekly).
+
+Multivitamin: Daily.
+
+Melatonin 3 mg: Occasionally for insomnia.
+
+Allergies
+NKDA: No known drug allergies.
+
+Family History
+Mother: Generalized anxiety disorder.
+
+Father: Hypertension.
+
+Sister: Depression (treated with fluoxetine).
+
+No family history of suicide or substance abuse.
+
+Social History
+Occupation: Full-time college student (biology major).
+
+Substances: Denies smoking, illicit drugs, or alcohol (abstains due to anxiety).
+
+Living Situation: Lives alone in campus housing; reports feeling isolated.
+
+Stressors: Academic pressure, financial worries about student loans.
+
+Sleep: 5–6 hours/night, frequent nighttime awakenings.
+
+Review of Systems (ROS)
+General: Fatigue, no weight changes.
+
+Psychiatric: Anxiety, panic attacks, low mood, denies suicidal/homicidal thoughts.
+
+Cardiovascular: Palpitations during attacks, denies chest pain.
+
+Respiratory: Occasional hyperventilation during panic attacks.
+
+Neurological: Denies headaches, dizziness, or syncope.
+
+GI: Mild nausea associated with anxiety.
+
+Physical Examination
+Vital Signs:
+
+BP: 118/72 mmHg
+
+HR: 92 bpm (elevated during panic attack)
+
+RR: 16 breaths/min
+
+Temp: 98.2°F (36.8°C)
+
+SpO2: 99% on room air
+
+General: Anxious appearance, fidgeting, but cooperative.
+
+Psychiatric: Mood: "overwhelmed," affect restricted. No psychosis.
+
+Cardiovascular: Tachycardic, regular rhythm, no murmurs.
+
+Neurological: Normal cognition, no focal deficits.
+
+Diagnostic Reports
+Blood Tests:
+
+CBC: Normal (Hb 13.2 g/dL, WBC 6.5 x10³/µL).
+
+Thyroid Panel: TSH 2.1 mIU/L (normal), free T4 1.2 ng/dL (normal).
+
+Electrolytes: Within normal limits.
+
+ECG: Sinus tachycardia (HR 110 bpm during panic attack), otherwise normal.
+
+Psychometric Screening:
+
+GAD-7 Score: 18/21 (severe anxiety).
+
+PHQ-9 Score: 10/27 (moderate depression).
+
+Assessment
+Panic Disorder with Agoraphobia (per DSM-5 criteria).
+
+Generalized Anxiety Disorder (GAD): Poorly controlled.
+
+Insomnia: Secondary to anxiety.
+
+Rule Out: Thyroid dysfunction (ruled out with labs).
+
+Plan
+Medication:
+
+Start Escitalopram 10 mg daily (SSRI for anxiety/panic), titrate to 20 mg in 2 weeks.
+
+Continue Lorazepam 0.5 mg PRN (limit to 2x/week to avoid dependence).
+
+Therapy:
+
+Refer to cognitive-behavioral therapy (CBT) with focus on exposure therapy for agoraphobia.
+
+Mindfulness and relaxation techniques (provided handouts).
+
+Lifestyle:
+
+Sleep hygiene counseling (fixed bedtime, screen-time reduction).
+
+Encourage gradual exposure to crowded settings (e.g., study groups).
+
+Follow-Up:
+
+Re-evaluate in 2 weeks for medication tolerance.
+
+Repeat GAD-7/PHQ-9 at next visit.
+
+Safety Plan:
+
+Provided crisis hotline number and campus counseling resources.
