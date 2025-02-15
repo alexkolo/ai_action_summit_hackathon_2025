@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-class DocumentLink(BaseModel):
+class DocumentSchema(BaseModel):
     link: str
     patient_social_security_number: str
 
