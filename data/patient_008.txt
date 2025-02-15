@@ -1,5 +1,8 @@
-Patient Name: Michael Carter
+Patient Information
+Name: Michael Carter
 Date of Birth: May 22, 1989
+
+
 Gender: Male
 Address: 789 Willow Street, Denver, USA
 
