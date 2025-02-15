@@ -6,9 +6,9 @@ A FastAPI service designed to generate refined summaries of user documents by in
 
 ## Overview
 
-This project provides an API endpoint that accepts a user email and processes the associated documents through a multi-step workflow:
+This project provides an API endpoint that accepts a user social_security_number and processes the associated documents through a multi-step workflow:
 
-1. **User Email Input**: The API receives a user email.
+1. **User 'social security number' Input**: The API receives a user social_security_number.
 2. **Database Query**: It fetches document links related to the user from a PostgreSQL database.
 3. **Document Retrieval**: The service retrieves the actual documents from an object store (e.g., S3, MinIO) using the obtained links.
 4. **LLM Processing Stage 1**: All document content is combined with a custom prompt and sent to a Mistral LLM to generate a **COMPREHENSIVE SUMMARY**.
@@ -20,13 +20,13 @@ This project provides an API endpoint that accepts a user email and processes th
 ## Project Workflow
 
 1. **API Request Handling**  
-   - **Input**: Accept a JSON payload containing the user email.
+   - **Input**: Accept a JSON payload containing the user social_security_number.
    - **Validation**: Use Pydantic models to validate incoming data.
 
 2. **Database Interaction**  
    - **Query**: Connect to a PostgreSQL database to retrieve user document links.
    - **Tables**:
-     - **User Table**: Stores user emails.
+     - **User Table**: Stores user informations.
      - **Document Table**: Stores document links associated with the user.
 
 3. **Object Store Integration**  
@@ -58,7 +58,7 @@ The project follows a modular architecture for scalability and maintainability:
 │   ├── db.py  # Database connection and session management.  
 │   ├── models/  
 │   │   ├── __init__.py  
-│   │   ├── user.py  # ORM model for users (includes email field).  
+│   │   ├── user.py  # ORM model for users (includes social_security_number field).  
 │   │   └── documents.py  # ORM model for document links associated with users.  
 │   ├── schemas/  
 │   │   ├── __init__.py  
@@ -82,10 +82,10 @@ The project follows a modular architecture for scalability and maintainability:
 ## Features
 
 - **User Input Handling**:  
-  Securely receives and validates user email via FastAPI endpoints.
+  Securely receives and validates user social_security_number via FastAPI endpoints.
 
 - **Database Integration**:  
-  Utilizes PostgreSQL to store and retrieve user emails and document links efficiently.
+  Utilizes PostgreSQL to store and retrieve user social_security_number and document links efficiently.
 
 - **Object Store Connectivity**:  
   Fetches document content from an external object store based on stored document links.
