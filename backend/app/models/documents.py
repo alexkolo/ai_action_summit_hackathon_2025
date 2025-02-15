@@ -7,9 +7,9 @@ class Document(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     link = Column(String, nullable=False)
-    patient_social_security_number = Column(
+    patient_id = Column(
         String,
-        ForeignKey("users.social_security_number"),
+        ForeignKey("patients.id"),
         nullable=False
     )
 

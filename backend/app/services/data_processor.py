@@ -8,14 +8,14 @@ from app.services.llm_client import call_llm
 COMPREHENSIVE_PROMPT = "Please provide a comprehensive summary for the following documents:\n"
 FINAL_PROMPT = "Refine the above summary to produce a final, polished summary:\n"
 
-def process_user_documents(social_security_number: str) -> str:
+def process_user_documents(num_social_sec: str) -> str:
     """
     Retrieves user documents, processes them through two LLM calls, and returns the final summary.
     """
     db: Session = SessionLocal()
     try:
-        # Retrieve the user and their associated documents from the database using social_security_number
-        user = db.query(User).filter(User.social_security_number == social_security_number).first()
+        # Retrieve the user and their associated documents from the database using num_social_sec
+        user = db.query(User).filter(User.num_social_sec == num_social_sec).first()
         if not user:
             raise Exception("User not found")
 

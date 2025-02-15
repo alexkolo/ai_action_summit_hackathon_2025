@@ -2,7 +2,7 @@ from pydantic import BaseModel, EmailStr
 from typing import Optional
 
 class UserSchema(BaseModel):
-    social_security_number: str         
+    num_social_sec: str         
     email: Optional[EmailStr] = None      
     name: Optional[str] = None             
     gender: Optional[str] = None  
