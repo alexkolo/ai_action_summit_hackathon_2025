@@ -33,27 +33,3 @@ Assessment: IBS flare, rule out inflammatory bowel disease.
 
 Plan: Start probiotics, consider colonoscopy if symptoms persist.
 
-Template for Additional Patients
-To create more patients, vary the following fields:
-
-Demographics: Age, gender, occupation.
-
-Chief Complaint: e.g., headache, dizziness, cough, etc.
-
-PMH: e.g., diabetes, asthma, depression, etc.
-
-Medications: Adjust based on conditions.
-
-Allergies: Add or remove allergies.
-
-Family History: Change conditions (e.g., cancer, heart disease).
-
-Social History: Modify smoking, alcohol, diet, or exercise habits.
-
-ROS: Tailor to the chief complaint.
-
-Physical Exam: Adjust findings (e.g., normal vs. abnormal).
-
-Lab Reports: Vary results (e.g., normal, elevated, or abnormal).
-
-Assessment/Plan: Match to the clinical scenario.
