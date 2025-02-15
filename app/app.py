@@ -4,6 +4,7 @@ Start: streamlit run app/app.py
 
 import os
 import time
+from io import StringIO
 from pathlib import Path
 from typing import Tuple
 
@@ -59,6 +60,26 @@ def generate_report(patient_id: str) -> Tuple[str, str]:
     return generate_report_mock(patient_id=patient_id)
 
 
+def export_history_to_markdown(history) -> str:
+    """
+    Returns a Markdown string of the conversation history.
+    """
+
+    # Zip user messages with their corresponding assistant replies
+    # history[0] => system message
+    # history[1::2] => every "user" message
+    # history[2::2] => every "assistant" message
+    question_answer_pairs = list(zip(history[1::2], history[2::2]))
+
+    markdown_output: str = ""
+    for i, (user_item, assistant_item) in enumerate(question_answer_pairs, start=1):
+        question = user_item["content"].strip()
+        answer = assistant_item["content"]
+        markdown_output += f"# {i}. Question: '{question}'\n\n{answer}\n\n"
+
+    return markdown_output
+
+
 def main() -> None:
     """
     Main function to run the Streamlit app.
@@ -86,7 +107,7 @@ def main() -> None:
         # If the patient was already found, disable the email field
         email_input_disabled: bool = st.session_state.patient_found
 
-        col_input, col_button = st.columns([4, 1], vertical_alignment="bottom")
+        col_input, col_button = st.columns([3, 1], vertical_alignment="bottom")
 
         # Text input for the patient's email
         user_email: str = col_input.text_input(
@@ -100,7 +121,7 @@ def main() -> None:
         # st.write(f"Current path: {Path('.').resolve()}")
 
         # Use a form_submit_button instead of a regular button
-        lookup_submit: bool = col_button.form_submit_button(label="Look up patient", type="primary")
+        lookup_submit: bool = col_button.form_submit_button(label="🔎 Look up patient", type="primary")
 
     # Step 2: Button to look up the patient
     if lookup_submit:  # st.button(label="Look up patient", disabled=email_input_disabled):
@@ -134,14 +155,14 @@ def main() -> None:
         col1, col2, col3 = st.columns(3, gap="large")
 
         with col1:
-            if st.button(label="Ask Questions", use_container_width=True, type="primary"):
+            if st.button(label="❓ Ask Questions", use_container_width=True, type="primary"):
                 st.session_state.chat_open = True  # Open the chat window
 
         with col2:
             # Provide a download button for the report in .txt format
             file_name: str = f"patient_report_{time.strftime('%Y%m%d_%H%M%S')}.txt"
             st.download_button(
-                label="Download Report",
+                label="📥 Download Report",
                 data=st.session_state.final_report,
                 file_name=file_name,
                 mime="text/plain",
@@ -150,7 +171,7 @@ def main() -> None:
 
         with col3:
             # Restart the app by resetting session state
-            if st.button(label="Restart Lookup", use_container_width=True):
+            if st.button(label="🚮 Restart Lookup", use_container_width=True):
                 for key in list(st.session_state.keys()):
                     del st.session_state[key]
                 st.rerun()
@@ -179,7 +200,7 @@ def main() -> None:
                 max_chars=1000,
             )
 
-            if st.button(label="Send Question"):
+            if st.button(label="❓ Ask this Question about the Patient"):
                 # Add the Q&A to chat history
                 st.session_state.chat_history.append({"role": "user", "content": user_question})
 
@@ -197,22 +218,59 @@ def main() -> None:
                 st.session_state.chat_history.append({"role": "assistant", "content": assistant_answer})
 
             # Display the chat history
-            st.divider()
-            for entry in st.session_state.chat_history:
-                role: str = entry["role"]
-                if role == "system":
-                    continue
-                text = entry["content"]
-                role_name: str = "Question" if role == "user" else "Answer"
-                st.write(f"**{role_name}:** {text}")
-                if role == "assistant":
-                    st.divider()
+            # st.divider()
+            # for entry in st.session_state.chat_history:
+            #     role: str = entry["role"]
+            #     if role == "system":
+            #         continue
+            #     text = entry["content"]
+            #     role_name: str = "Question" if role == "user" else "Answer"
+            #     st.write(f"**{role_name}:** {text}")
+            #     if role == "assistant":
+            #         st.divider()
 
-        if st.button(label="Clear Chat History"):
+            history: list[dict[str, str]] = st.session_state.chat_history
+            # for i in range(1, len(history), 2):
+            #     user_message = history[i]["content"]
+            #     # Be cautious about index bounds:
+            #     if i + 1 < len(history):
+            #         assistant_reply: str = history[i + 1]["content"]
+            #     else:
+            #         assistant_reply = ""
+
+            #     with st.expander(label=user_message):
+            #         st.write(assistant_reply)
+
+            # Zip user messages with their corresponding assistant replies
+            # history[0] => system message
+            # history[1::2] => every "user" message
+            # history[2::2] => every "assistant" message
+            pairs = list(zip(history[1::2], history[2::2]))
+
+            for i, (user_item, assistant_item) in enumerate(pairs):
+                # We want only the last expander opened by default
+                expanded: bool = i == len(pairs) - 1
+
+                with st.expander(label=f"{i + 1}. Question: **{user_item['content'].strip()}**", expanded=expanded):
+                    st.write(assistant_item["content"])
+
+        col_export, col_clear = st.columns(2, gap="large")
+
+        if col_clear.button(label="🧹 Clear Chat History", use_container_width=True):
             st.session_state.chat_history.clear()
             st.rerun()
 
-            # st.success(body="Chat history cleared.")
+        # Use Streamlit's download_button to download the content
+        downloaded: bool = col_export.download_button(
+            label="📥 Download Chat History",
+            data=StringIO(export_history_to_markdown(history=history)).getvalue(),
+            file_name=f"chat_history_{time.strftime('%Y%m%d_%H%M%S')}.md",
+            mime="text/markdown",
+            use_container_width=True,
+        )
+
+        if downloaded:
+            st.success(body="Chat history exported as Markdown.", icon="✅")
 
 
 # Run the Streamlit app
