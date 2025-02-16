@@ -1,0 +1,23 @@
+FROM python:3.11.11-slim@sha256:42420f737ba91d509fc60d5ed65ed0492678a90c561e1fa08786ae8ba8b52eda
+LABEL org.opencontainers.image.source=https://github.com/alexkolo/ai_action_summit_hackathon_2025
+
+RUN useradd -ms /bin/bash app
+USER app
+WORKDIR /home/homedir
+
+COPY --chown=app:app ./app/requirements.txt /home/homedir/requirements.txt
+
+COPY --chown=app:app ./prompts /home/homedir/prompts
+COPY --chown=app:app ./data /home/homedir/data
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY --chown=app:app ./app /home/homedir/app
+
+ENV PYTHONPATH "${PYTHONPATH}:/home/homedir/app"
+
+RUN export PYTHONPATH
+
+EXPOSE 8501
+
+CMD ["python", "-m", "streamlit", "run", "/home/homedir/app/app.py", "--server.address=0.0.0.0" , "--browser.gatherUsageStats=false", "--client.toolbarMode=minimal"]
