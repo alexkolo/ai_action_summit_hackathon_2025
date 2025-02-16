@@ -5,3 +5,5 @@ env
 .pylint.yaml
 README.md
 .github
+DockerfileApp
+app/__pycache__
