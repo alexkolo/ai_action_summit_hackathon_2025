@@ -1,4 +1,4 @@
-# API Documentation
+# Backend Documentation 
 
 A FastAPI service designed to generate refined summaries of user documents by integrating PostgreSQL, an object store, and sequential LLM processing using Mistral.
 
@@ -10,7 +10,7 @@ This project provides an API endpoint that accepts a user num_social_sec and pro
 
 1. **User 'social security number' Input**: The API receives a user num_social_sec.
 2. **Database Query**: It fetches document links related to the user from a PostgreSQL database.
-3. **Document Retrieval**: The service retrieves the actual documents from an object store (e.g., S3, MinIO) using the obtained links.
+3. **Document Retrieval**: The service retrieves the actual documents from an object store using the obtained links.
 4. **LLM Processing Stage 1**: All document content is combined with a custom prompt and sent to a Mistral LLM to generate a **COMPREHENSIVE SUMMARY**.
 5. **LLM Processing Stage 2**: The comprehensive summary is then passed to another Mistral LLM call with an additional prompt to produce the **FINAL SUMMARY**.
 6. **Response**: The API returns the FINAL SUMMARY as the final output to the client.
@@ -19,7 +19,8 @@ This project provides an API endpoint that accepts a user num_social_sec and pro
 
 ## Project Workflow
 
-1. **API Request Handling**  
+1. **API Key and Request Handling**  
+   - **Authentification**: Every request must include a valid API key in the header.
    - **Input**: Accept a JSON payload containing the user num_social_sec.
    - **Validation**: Use Pydantic models to validate incoming data.
 
@@ -113,14 +114,18 @@ The `.env` file includes all necessary configuration parameters. Key variables i
   - `DB_PASSWORD`: Database password.
   - `DB_NAME`: Name of the PostgreSQL database.
 
+- **API KEY**:
+  - `BACKEND_API_KEY_NAME`
+  - `BACKEND_API_KEY`
+
 - **Object Store Settings**:
   - `OBJECT_STORE_URL`: Base URL for the object store.
   - `OBJECT_STORE_KEY`: API key or access token for accessing the object store.
 
 - **LLM Settings**:
+  - `LLM_MISTRAL_MODEL`: LLM Mistral Model.
   - `LLM_API_KEY`: API key for the Mistral LLM service.
   - `LLM_ENDPOINT`: Endpoint URL for the Mistral LLM.
-  - *(Additional prompt-related configuration variables can be added as required.)*
 
 ---
 
@@ -144,16 +149,6 @@ The `.env` file includes all necessary configuration parameters. Key variables i
 
 4. **Access API Documentation**  
    Navigate to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in your browser to interact with the API through the automatically generated Swagger UI.
-
----
-
-## Future Enhancements
-
-- **Enhanced Error Handling**: Implement robust error handling and logging for improved debugging and reliability.
-- **Caching Strategies**: Integrate caching mechanisms to optimize repeated document retrieval and LLM calls.
-- **Security Improvements**: Strengthen authentication and authorization, especially for API endpoints and external service integrations.
-- **Monitoring & Analytics**: Add tools to monitor API performance and track usage metrics.
-- **Asynchronous Processing**: Leverage asynchronous I/O for database and object store interactions to improve performance under load.
 
 ---
 
