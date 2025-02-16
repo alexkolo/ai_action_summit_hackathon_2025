@@ -12,6 +12,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from mistralai import ChatCompletionResponse, Mistral
 from mock_backend import generate_report as generate_report_mock
+from call_backend import generate_report_from_back
 
 load_dotenv()
 api_key: str | None = os.getenv(key="MISTRAL_TOKEN")
@@ -120,7 +121,7 @@ def main() -> None:
         # Text input for the patient's email
         user_email: str = st.text_input(
             label="Enter Social Security Number",
-            value="0000000000000",
+            value="18503251237589",
             key="user_email_input",
             placeholder="Enter Social Security Number",
         )
@@ -167,7 +168,7 @@ def main() -> None:
         if st.session_state.consent_for_analysis:
             st.success(body="Consent analyzing medical records granted!", icon="✅")
             with st.spinner(text="Analyzing medical records & generating report..."):
-                com_report, final_report = generate_report(patient_id=user_email)
+                com_report, final_report = generate_report_from_back(patient_id=user_email)
                 st.session_state.final_report = final_report
                 st.session_state.com_report = com_report
                 st.session_state.report_created = True
