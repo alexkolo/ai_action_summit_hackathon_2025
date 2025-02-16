@@ -6,7 +6,7 @@ Breaking the "blind date" barrier between a doctor and a new patient by providin
 
 ## Team
 
-Team Name: "Warn Approach 💚"
+Team Name: "Warm Approach 💚" (aka "Last but not least", aka "NEW")
 
 Team members: Alex Kolodzig | Nabil Aitbaha | Ibrahi Almajai | Abdarrahmane Neine
 
