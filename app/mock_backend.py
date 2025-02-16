@@ -6,15 +6,19 @@ from typing import Tuple
 from dotenv import load_dotenv
 from mistralai import ChatCompletionResponse, Mistral
 
+# set up LLM
 load_dotenv()
 api_key: str | None = os.getenv(key="MISTRAL_TOKEN")
 model = "mistral-large-latest"
 
 root: Path = Path(".").resolve()
+
+# prompt files
 cs_prompt_file: Path = root / "prompts/stage_01/stage01_latest.md"
 fs_prompt_file: Path = root / "prompts/stage_02/stage02_latest.md"
 
-mock_patient_file: Path = root / "data/patient_001.txt"
+mock_patient_file: Path = root / "data/mock_data/patient_001.txt"
+report_folder: Path = root / "app/reports"
 
 
 # Mock function to generate a patient's report
@@ -33,6 +37,7 @@ def generate_report(patient_id: str) -> Tuple[str, str]:
     content: str = mock_patient_file.read_text(encoding="utf-8")
 
     # create Comprehensive Medical History Summary
+    # --------------------------------------------
     if cs_prompt_file.is_file() is False:
         raise FileNotFoundError(f"File {cs_prompt_file} not found.")
     cs_prompt: str = cs_prompt_file.read_text(encoding="utf-8").format(content=content)
@@ -43,10 +48,11 @@ def generate_report(patient_id: str) -> Tuple[str, str]:
     com_report: str = chat_response.choices[0].message.content
     # save to temp file with timestamp
     timestamp: str = time.strftime("%Y%m%d_%H%M%S")
-    report_file_cs: Path = root / f"app/reports/{patient_id}_cs_{timestamp}.md"
+    report_file_cs: Path = report_folder / f"{patient_id}_cs_{timestamp}.md"
     report_file_cs.write_text(data=com_report, encoding="utf-8")
 
     # create Final Report
+    # --------------------------------------------
     if fs_prompt_file.is_file() is False:
         raise FileNotFoundError(f"File {fs_prompt_file} not found.")
     fs_prompt: str = fs_prompt_file.read_text(encoding="utf-8").format(content=com_report)
@@ -57,11 +63,11 @@ def generate_report(patient_id: str) -> Tuple[str, str]:
     final_report: str = chat_response.choices[0].message.content
     # save to temp file with timestamp
     timestamp: str = time.strftime("%Y%m%d_%H%M%S")
-    report_file_fs: Path = root / f"app/reports/{patient_id}_fs_{timestamp}.md"
+    report_file_fs: Path = report_folder / f"{patient_id}_fs_{timestamp}.md"
     report_file_fs.write_text(data=final_report, encoding="utf-8")
 
-    print(f"Comprehensive Report saved to: {report_file_cs}")
-    print(f"Final Report saved to: {report_file_fs}")
+    # print(f"Comprehensive Report saved to: {report_file_cs}")
+    # print(f"Final Report saved to: {report_file_fs}")
 
     return com_report, final_report
 
