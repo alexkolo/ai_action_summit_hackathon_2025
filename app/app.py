@@ -171,6 +171,7 @@ def main() -> None:
                 st.session_state.final_report = final_report
                 st.session_state.com_report = com_report
                 st.session_state.report_created = True
+                time.sleep(1)  # Simulate a delay
 
     # Show the report if it was created
     if st.session_state.report_created:

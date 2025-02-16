@@ -1,5 +1,11 @@
 # AI Action Summit Hackathon 2025
 
+## System Design
+
+[add picture here]
+
+## Frontend
+
 ## Environment
 
 - build with Python 3.11.10
@@ -24,3 +30,7 @@ streamlit run app/app.py
 docker image build -t streamFront -f DockerfileApp  .
 docker container run  -p 8501:8501  -e MISTRAL_TOKEN=your_mistral_token streamFront
 ```
+
+## Backend
+
+TODO
