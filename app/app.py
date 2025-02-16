@@ -180,8 +180,10 @@ def main() -> None:
             with st.spinner(text="Analyzing medical records & generating report..."):
                 if st.session_state.streamlit:
                     # use mock backend when deployed on streamlit cloud
+                    t_start: float = time.time()
                     com_report, final_report = generate_report(patient_id=user_email)
-                    time.sleep(2)
+                    if time.time() - t_start < 2:
+                        time.sleep(2)
                 else:
                     # use real backend when deployed otherwise
                     com_report, final_report = generate_report_from_back(patient_id=user_email)
