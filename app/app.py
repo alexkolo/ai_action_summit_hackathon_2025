@@ -9,10 +9,10 @@ from pathlib import Path
 from typing import Tuple
 
 import streamlit as st
+from call_backend import generate_report_from_back
 from dotenv import load_dotenv
 from mistralai import ChatCompletionResponse, Mistral
 from mock_backend import generate_report as generate_report_mock
-from call_backend import generate_report_from_back
 
 load_dotenv()
 api_key: str | None = os.getenv(key="MISTRAL_TOKEN")
@@ -89,6 +89,10 @@ def main() -> None:
     """
     Main function to run the Streamlit app.
     """
+
+    # Secrets
+    # -----------------------------
+
     APP_TITLE = "Consultation Warm Up 💚"
     APP_ICON = "💚"
     st.set_page_config(page_title=APP_TITLE, page_icon=APP_ICON)
@@ -114,6 +118,12 @@ def main() -> None:
     if "user_question" not in st.session_state:
         st.session_state.user_question = "Is the patient on any medications?"
 
+    # check if deployed on streamlit cloud
+    # if yes use mock backend
+    ST_SECRETS_FILE: str = ".streamlit/secrets.toml"
+    if "streamlit" not in st.session_state:
+        st.session_state.streamlit = st.secrets.get("streamlit", False) if Path(ST_SECRETS_FILE).exists() else False
+
     # Create a form for patient lookup
     with st.form(key="lookup_form"):
         # col_input, col_button = st.columns([3, 1], vertical_alignment="bottom")
@@ -127,7 +137,7 @@ def main() -> None:
         )
 
         consent_for_search: bool = st.checkbox(
-            label="Patient gave consents to search for medical records in their Doctolib account."
+            label="Patient gave consent to search for medical records in their Doctolib account."
         )
         st.session_state.consent_for_search = consent_for_search
 
@@ -153,7 +163,7 @@ def main() -> None:
         st.success(body="Medical records are available for this patient.", icon="✅")
 
         # question whether the patient gives consent to analyze their medical records
-        st.write("Does the patient gave consents to analyze their medical records?")
+        st.write("Does the patient give consent to analyze their medical records?")
 
         col_yes, col_no = st.columns(spec=2, gap="large")
         no_analysis_consent: bool = col_no.button(label="No", use_container_width=True)
@@ -168,7 +178,13 @@ def main() -> None:
         if st.session_state.consent_for_analysis:
             st.success(body="Consent analyzing medical records granted!", icon="✅")
             with st.spinner(text="Analyzing medical records & generating report..."):
-                com_report, final_report = generate_report_from_back(patient_id=user_email)
+                if st.session_state.streamlit:
+                    # use mock backend when deployed on streamlit cloud
+                    com_report, final_report = generate_report(patient_id=user_email)
+                    time.sleep(1)
+                else:
+                    # use real backend when deployed otherwise
+                    com_report, final_report = generate_report_from_back(patient_id=user_email)
                 st.session_state.final_report = final_report
                 st.session_state.com_report = com_report
                 st.session_state.report_created = True

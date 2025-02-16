@@ -30,6 +30,9 @@ Analyze the **comprehensive medical history summary** provided below and generat
    - **Allergies & Sensitivities**
    - **Preventive Screenings & Outstanding Medical Needs**
 
+3. Propose follow-up questions
+   - suggestion 5 obvious questions to have a deep dive into the patient's medical history
+
 Ensure the **most relevant and actionable** details are at the forefront, allowing for **rapid comprehension and decision-making**.
 
 # **Comprehensive Medical History Summary**
