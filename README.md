@@ -1,6 +1,10 @@
 # 💚 Consultation Warm Up 💚
 
-Helps break the “blind date” barrier between a physician and a new patient by providing swift, AI-assisted insight into their health background, leading to more informed decisions and better patient outcomes. 💚
+## Summary
+
+Breaking the "blind date" barrier between a doctor and a new patient by providing quick, AI-powered insights into their health history, transforming the interaction from a cold to a warm approach💚, leading to more informed decisions and better patient outcomes.
+
+## Team
 
 Team Name: "Warn Approach 💚"
 
