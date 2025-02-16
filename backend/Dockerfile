@@ -9,7 +9,7 @@ COPY ./requirements.txt /home/api/requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . /home/api/aihack
+COPY ./app /home/api/aihack
 
 ENV PYTHONPATH "${PYTHONPATH}:/home/api/aihack"
 

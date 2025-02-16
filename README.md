@@ -17,3 +17,10 @@ pip install -r requirements.txt
 source venv/bin/activate
 streamlit run app/app.py
 ```
+
+## Run the application with Docker locally
+
+```bash
+docker image build -t streamFront -f DockerfileApp  .
+docker container run  -p 8501:8501  -e MISTRAL_TOKEN=your_mistral_token streamFront
+```
