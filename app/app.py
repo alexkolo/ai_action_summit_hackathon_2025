@@ -88,6 +88,10 @@ def main() -> None:
     """
     Main function to run the Streamlit app.
     """
+
+    # Secrets
+    # -----------------------------
+
     APP_TITLE = "Consultation Warm Up 💚"
     APP_ICON = "💚"
     st.set_page_config(page_title=APP_TITLE, page_icon=APP_ICON)
@@ -112,6 +116,12 @@ def main() -> None:
         st.session_state.consent_for_analysis = False
     if "user_question" not in st.session_state:
         st.session_state.user_question = "Is the patient on any medications?"
+
+    # check if deployed on streamlit cloud
+    # if yes use mock backend
+    ST_SECRETS_FILE: str = ".streamlit/secrets.toml"
+    if "streamlit" not in st.session_state:
+        st.session_state.streamlit = st.secrets.get("streamlit", False) if Path(ST_SECRETS_FILE).exists() else False
 
     # Create a form for patient lookup
     with st.form(key="lookup_form"):
