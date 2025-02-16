@@ -26,7 +26,7 @@ async def process_user_documents(num_social_sec: str) -> str:
         #     patient_data.append(content)
         # simulate patient_data
         links_url = {
-            "patient_001" : os.path.join(ROOT_DIR, "data", "patient_001.txt"),
+            "patient_001" : os.path.join(ROOT_DIR, "data/mock_data", "patient_001.txt"),
         }
         # aggregate all document contents
         patient_data = []
