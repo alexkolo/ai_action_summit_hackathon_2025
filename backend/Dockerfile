@@ -15,6 +15,6 @@ ENV PYTHONPATH "${PYTHONPATH}:/home/app"
 
 RUN export PYTHONPATH
 
-EXPOSE 9000
+EXPOSE 8000
 
 CMD ["python", "/home/app/main.py"]
