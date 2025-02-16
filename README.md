@@ -2,7 +2,7 @@
 
 ## Summary
 
-Breaking the "blind date" barrier between a doctor and a new patient by providing quick, AI-powered insights into their health history, transforming the interaction from a cold to a warm approach💚, leading to more informed decisions and better patient outcomes.
+Breaking the "blind date" barrier between a doctor and a new patient by providing quick, AI-powered insights into their health history, transforming the interaction from a cold ❄ to a warm approach 💚, leading to more informed decisions and better patient outcomes.
 
 ## Team
 
