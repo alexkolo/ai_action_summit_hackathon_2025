@@ -177,19 +177,21 @@ def main() -> None:
         # Analyzing medical records & generating report
         if st.session_state.consent_for_analysis:
             st.success(body="Consent analyzing medical records granted!", icon="✅")
-            with st.spinner(text="Analyzing medical records & generating report..."):
-                if st.session_state.streamlit:
-                    # use mock backend when deployed on streamlit cloud
-                    t_start: float = time.time()
-                    com_report, final_report = generate_report(patient_id=user_email)
-                    if time.time() - t_start < 2:
-                        time.sleep(2)
-                else:
-                    # use real backend when deployed otherwise
-                    com_report, final_report = generate_report_from_back(patient_id=user_email)
-                st.session_state.final_report = final_report
-                st.session_state.com_report = com_report
-                st.session_state.report_created = True
+
+            if not st.session_state.report_created:
+                with st.spinner(text="Analyzing medical records & generating report..."):
+                    if st.session_state.streamlit:
+                        # use mock backend when deployed on streamlit cloud
+                        t_start: float = time.time()
+                        com_report, final_report = generate_report(patient_id=user_email)
+                        if time.time() - t_start < 2:
+                            time.sleep(2)
+                    else:
+                        # use real backend when deployed otherwise
+                        com_report, final_report = generate_report_from_back(patient_id=user_email)
+                    st.session_state.final_report = final_report
+                    st.session_state.com_report = com_report
+                    st.session_state.report_created = True
 
     # Show the report if it was created
     if st.session_state.report_created:
