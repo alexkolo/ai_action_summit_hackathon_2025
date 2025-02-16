@@ -12,6 +12,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from mistralai import ChatCompletionResponse, Mistral
 from mock_backend import generate_report as generate_report_mock
+from call_backend import generate_report_from_back
 
 load_dotenv()
 api_key: str | None = os.getenv(key="MISTRAL_TOKEN")
@@ -111,11 +112,11 @@ def main() -> None:
 
         # Text input for the patient's email
         user_email: str = col_input.text_input(
-            label="Enter patient's email address",
-            value="test_patient@gmail.com",
+            label="Enter patient's social security number",
+            value="18503251237589",
             disabled=email_input_disabled,
             key="user_email_input",
-            placeholder="Enter patient's email address",
+            placeholder="Enter patient's social security number",
         )
 
         # st.write(f"Current path: {Path('.').resolve()}")
@@ -141,7 +142,9 @@ def main() -> None:
             with st.spinner(text="Generating report..."):
                 time.sleep(2)
                 # Once done, store the generated report in session state
-                com_report, final_report = generate_report(patient_id=user_email)
+                # com_report, final_report = generate_report(patient_id=user_email)
+                com_report, final_report = generate_report_from_back(patient_id=user_email)
+
                 st.session_state.final_report = final_report
                 st.session_state.com_report = com_report
                 st.session_state.report_created = True
