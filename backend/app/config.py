@@ -8,6 +8,10 @@ class Settings(BaseSettings):
     DB_PASSWORD: str
     DB_NAME: str
 
+    # api key
+    BACKEND_API_KEY_NAME: str
+    BACKEND_API_KEY: str
+
     # Object store settings
     OBJECT_STORE_URL: str
     OBJECT_STORE_KEY: str
