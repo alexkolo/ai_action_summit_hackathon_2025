@@ -1,3 +1,5 @@
 readme.md
 .gitfolder
 .env-example
+app/__pycache__/
+.env

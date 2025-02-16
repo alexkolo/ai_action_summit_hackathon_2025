@@ -70,3 +70,5 @@ def generate_report(patient_id: str) -> Tuple[str, str]:
     # print(f"Final Report saved to: {report_file_fs}")
 
     return com_report, final_report
+
+
