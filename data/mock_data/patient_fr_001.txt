@@ -1,0 +1,134 @@
+Informations du patient
+Nom : Léa Dubois
+
+Date de naissance : 15 juillet 1998
+
+Sexe : Femme
+
+Adresse : 12 Rue de Rivoli, 75004 Paris
+
+Numéro de dossier médical : FR-75309
+
+Motif de consultation
+Plainte principale : « Toux persistante, essoufflement, et infections fréquentes depuis 6 mois. »
+
+Histoire de la maladie actuelle
+Léa, une étudiante en design de 25 ans, présente une aggravation de son asthme (diagnostiqué à l’âge de 10 ans) avec des épisodes de toux sèche nocturne et un essoufflement à l’effort (ex. : montée des escaliers). Elle rapporte 3 épisodes de bronchite depuis janvier 2024, traités par antibiotiques. Elle utilise fréquemment sa Ventoline® (salbutamol), jusqu’à 4 fois par jour. Elle signale également une fatigue générale et des rhinites récurrentes. Pas de fièvre ou perte de poids.
+
+Antécédents médicaux
+Asthme allergique : Suivi depuis l’enfance, déclenché par les pollens, les acariens et la pollution.
+
+Immunodéficience légère : Dosage d’IgG bas en 2023 (650 mg/dL ; norme : 700–1600 mg/dL).
+
+Sinusite chronique : Traitée par corticoïdes nasaux.
+
+Allergie aux pénicillines (réaction cutanée à l’amoxicilline en 2015).
+
+Traitements en cours
+Salbutamol (Ventoline®) : 2 bouffées en cas de crise.
+
+Propionate de fluticasone (Flixotide®) : 125 µg x 2/jour (adhésion irrégulière).
+
+Suppléments : Vitamine D 1000 UI/jour, zinc.
+
+Antihistaminique : Desloratadine (Aerius®) en saison pollinique.
+
+Allergies
+Médicamenteuses : Pénicillines (éruption cutanée).
+
+Environnementales : Pollens de bouleau, acariens, moisissures.
+
+Histoire familiale
+Mère : Asthme et rhinite allergique.
+
+Père : Diabète de type 2.
+
+Frère : Aucun problème immunitaire connu.
+
+Histoire sociale
+Profession : Étudiante à l’École des Arts Décoratifs.
+
+Tabac : Non-fumeuse.
+
+Alcool : Occasionnel (vin en soirée).
+
+Expositions : Logement parisien ancien (moisissures dans la salle de bain), trajets quotidiens en vélo (exposition à la pollution).
+
+Alimentation : Équilibre variable, faible consommation de fruits/légumes.
+
+Examen clinique
+Signes vitaux :
+
+TA : 120/75 mmHg
+
+FC : 88 bpm
+
+SpO2 : 97 % (air ambiant)
+
+RR : 20 cycles/min
+
+Poumons : Sibilances expiratoires bilatérales.
+
+ORL : Muqueuses nasales pâles, écoulement postérieur.
+
+Peau : Aucun eczéma ou lésion.
+
+Examens complémentaires
+Spirométrie :
+
+VEMS : 75 % de la valeur théorique.
+
+Rapport VEMS/CV : 70 % (limite inférieure de la normale).
+
+Tests allergologiques :
+
+Positifs pour les acariens, pollens de bouleau et chat.
+
+Bilan immunologique :
+
+IgG : 660 mg/dL (légèrement bas).
+
+IgA/IgM : Normales.
+
+Lymphocytes T : Légère diminution des CD4+.
+
+Radiographie thoracique : Hyperclarté périphérique (signes d’asthme), pas de lésion pulmonaire.
+
+Diagnostic
+Asthme allergique mal contrôlé (exacerbé par la pollution parisienne et les allergènes).
+
+Déficit immunitaire léger (hypogammaglobulinémie transitoire ?).
+
+Toux chronique secondaire à l’asthme et aux infections récurrentes.
+
+Plan de traitement
+Optimisation de l’asthme :
+
+Ajouter un corticoïde inhalé à dose fixe (Symbicort® 200/6 µg x 2/jour).
+
+Éducation thérapeutique : Utilisation correcte de l’inhalateur.
+
+Renforcement immunitaire :
+
+Supplémentation en vitamine D (2000 UI/jour pendant 3 mois).
+
+Vaccination : Rappel du pneumocoque et grippe.
+
+Environnement :
+
+Conseils pour réduire les acariens (housses anti-acariens, lavage hebdomadaire du linge).
+
+Éviter les trajets à vélo lors des pics de pollution (utiliser l’appli AirParif).
+
+Suivi :
+
+Consultation en allergologie pour désensibilisation aux acariens.
+
+Bilan immunologique répété dans 6 mois.
+
+Réévaluation de la toux après 4 semaines.
+
+Recommandations
+« Évitez les parfums d’intérieur et les produits ménagers irritants. »
+
+« Consultez en urgence en cas de sifflements persistants ou fièvre. »
