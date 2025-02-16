@@ -137,7 +137,7 @@ def main() -> None:
         )
 
         consent_for_search: bool = st.checkbox(
-            label="Patient gave consents to search for medical records in their Doctolib account."
+            label="Patient gave consent to search for medical records in their Doctolib account."
         )
         st.session_state.consent_for_search = consent_for_search
 
@@ -163,7 +163,7 @@ def main() -> None:
         st.success(body="Medical records are available for this patient.", icon="✅")
 
         # question whether the patient gives consent to analyze their medical records
-        st.write("Does the patient gave consents to analyze their medical records?")
+        st.write("Does the patient give consent to analyze their medical records?")
 
         col_yes, col_no = st.columns(spec=2, gap="large")
         no_analysis_consent: bool = col_no.button(label="No", use_container_width=True)
